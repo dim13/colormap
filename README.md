@@ -1,28 +1,28 @@
-# mpl colormaps
+# MPL colormaps
 
 Go implementation of [colormap](http://bids.github.io/colormap/)
 
-# preview
+# Preview
 
-## magma
+## colormap.Magma
 
 ![magma](images/magma.png)
 
 ![magma plot](images/magma_plot.png)
 
-## inferno
+## colormap.Inferno
 
 ![inferno](images/inferno.png)
 
 ![inferno plot](images/inferno_plot.png)
 
-## plasma
+## colormap.Plasma
 
 ![plasma](images/plasma.png)
 
 ![plasma plot](images/plasma_plot.png)
 
-## viridis
+## colormap.Viridis
 
 ![viridis](images/viridis.png)
 
