@@ -61,7 +61,7 @@ func gen(fname string) error {
 	fmt.Fprintf(fd, "package colormap\n\n")
 	fmt.Fprintf(fd, "import \"image/color\"\n\n")
 	fmt.Fprintf(fd, "// %s palette\n", varName)
-	fmt.Fprintf(fd, "var %s = []color.Color{\n", varName)
+	fmt.Fprintf(fd, "var %s = color.Palette{\n", varName)
 	for _, v := range p {
 		c := color.RGBAModel.Convert(v).(color.RGBA)
 		fmt.Fprintf(fd, "\tcolor.RGBA{%#02x, %#02x, %#02x, %#02x},\n", c.R, c.G, c.B, c.A)

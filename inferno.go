@@ -4,7 +4,7 @@ package colormap
 import "image/color"
 
 // Inferno palette
-var Inferno = []color.Color{
+var Inferno = color.Palette{
 	color.RGBA{0x00, 0x00, 0x03, 0xff},
 	color.RGBA{0x00, 0x00, 0x04, 0xff},
 	color.RGBA{0x00, 0x00, 0x06, 0xff},

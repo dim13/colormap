@@ -4,7 +4,7 @@ package colormap
 import "image/color"
 
 // Plasma palette
-var Plasma = []color.Color{
+var Plasma = color.Palette{
 	color.RGBA{0x0c, 0x07, 0x87, 0xff},
 	color.RGBA{0x10, 0x07, 0x88, 0xff},
 	color.RGBA{0x13, 0x06, 0x89, 0xff},

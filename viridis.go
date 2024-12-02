@@ -4,7 +4,7 @@ package colormap
 import "image/color"
 
 // Viridis palette
-var Viridis = []color.Color{
+var Viridis = color.Palette{
 	color.RGBA{0x44, 0x01, 0x54, 0xff},
 	color.RGBA{0x44, 0x02, 0x55, 0xff},
 	color.RGBA{0x45, 0x03, 0x57, 0xff},
