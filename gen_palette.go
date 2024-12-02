@@ -8,6 +8,7 @@ import (
 	"image/color"
 	"io"
 	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -44,11 +45,12 @@ func (f floatColor) RGBA() (r uint32, g uint32, b uint32, a uint32) {
 	return
 }
 
-func gen(name, fname string) error {
+func gen(fname string) error {
 	p, err := readPalette(fname)
 	if err != nil {
 		return err
 	}
+	name := strings.TrimSuffix(filepath.Base(fname), filepath.Ext(fname))
 	fd, err := os.Create(name + ".go")
 	if err != nil {
 		return err
@@ -69,8 +71,8 @@ func gen(name, fname string) error {
 }
 
 func main() {
-	gen("magma", "palette/magma.txt")
-	gen("inferno", "palette/inferno.txt")
-	gen("plasma", "palette/plasma.txt")
-	gen("viridis", "palette/viridis.txt")
+	gen("palette/magma.txt")
+	gen("palette/inferno.txt")
+	gen("palette/plasma.txt")
+	gen("palette/viridis.txt")
 }
