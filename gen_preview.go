@@ -19,7 +19,7 @@ func genPreview(name string, p color.Palette, h int) error {
 	for i := 0; i < h; i++ {
 		draw.Draw(img, img.Bounds().Add(image.Pt(0, i)), pimg, image.ZP, draw.Src)
 	}
-	fd, err := os.Create("images/" + name + ".png")
+	fd, err := os.Create("palette/" + name + ".png")
 	if err != nil {
 		return err
 	}

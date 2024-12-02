@@ -6,24 +6,24 @@ Go implementation of [colormap](http://bids.github.io/colormap/)
 
 ## colormap.Magma
 
-![magma](images/magma.png)
+![magma](palette/magma.png)
 
-![magma plot](images/magma_plot.png)
+![magma plot](palette/magma_plot.png)
 
 ## colormap.Inferno
 
-![inferno](images/inferno.png)
+![inferno](palette/inferno.png)
 
-![inferno plot](images/inferno_plot.png)
+![inferno plot](palette/inferno_plot.png)
 
 ## colormap.Plasma
 
-![plasma](images/plasma.png)
+![plasma](palette/plasma.png)
 
-![plasma plot](images/plasma_plot.png)
+![plasma plot](palette/plasma_plot.png)
 
 ## colormap.Viridis
 
-![viridis](images/viridis.png)
+![viridis](palette/viridis.png)
 
-![viridis plot](images/viridis_plot.png)
+![viridis plot](palette/viridis_plot.png)
